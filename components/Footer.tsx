@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
         <div className="footer__bottom">
           <div className="copyright-text">
-            <p>Copyright & design by <a href="https://themeforest.net/user/themeadapt" target="_blank">@ThemeAdapt</a> - 2025</p>
+            <p>Copyright Avera & Built with ❤️ by <a href="https://invipro.dev" target="_blank" rel="noopener noreferrer">Invictus Pro</a></p>
           </div>
         </div>
       </div>

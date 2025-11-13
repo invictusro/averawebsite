@@ -98,7 +98,7 @@ section {
 /* Navbar logo size */
 .logo img:first-of-type,
 .nav-logo img:first-of-type {
-  max-height: 45px !important;
+  max-height: 52px !important;
 }
 
 .logo img:last-of-type,

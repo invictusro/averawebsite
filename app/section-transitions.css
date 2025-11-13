@@ -60,14 +60,14 @@ footer {
   z-index: 1 !important;
 }
 
-/* Remove gap between banner and features */
+/* Add spacing between banner and features */
 .banner__area {
-  padding-bottom: 0 !important;
+  padding-bottom: 80px !important;
   margin-bottom: 0 !important;
 }
 
 .features__area.section-pt-120 {
-  padding-top: 100px !important;
+  padding-top: 140px !important;
   margin-top: 0 !important;
 }
 

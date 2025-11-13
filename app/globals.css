@@ -11,6 +11,7 @@
 @import url('./mobile-responsive.css');
 @import url('./force-green.css');
 @import url('./marquee-billboard.css');
+@import url('./section-transitions.css');
 
 @tailwind base;
 @tailwind components;

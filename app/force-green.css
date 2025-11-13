@@ -103,22 +103,27 @@ section::before,
 .main-area::before {
   content: '' !important;
   position: absolute !important;
-  top: 0 !important;
+  top: -10% !important;
   left: 0 !important;
   width: 100% !important;
-  height: 100% !important;
+  height: 120% !important;
   background: radial-gradient(
-    circle at 30% 50%,
-    rgba(16, 185, 129, 0.04) 0%,
-    transparent 50%
+    ellipse 120% 120% at 30% 50%,
+    rgba(16, 185, 129, 0.025) 0%,
+    rgba(16, 185, 129, 0.015) 30%,
+    rgba(16, 185, 129, 0.008) 50%,
+    transparent 80%
   ),
   radial-gradient(
-    circle at 70% 80%,
-    rgba(5, 150, 105, 0.03) 0%,
-    transparent 50%
+    ellipse 120% 120% at 70% 80%,
+    rgba(5, 150, 105, 0.02) 0%,
+    rgba(5, 150, 105, 0.01) 30%,
+    rgba(5, 150, 105, 0.005) 50%,
+    transparent 80%
   ) !important;
   pointer-events: none !important;
   z-index: 0 !important;
+  filter: blur(40px) !important;
 }
 
 /* Ensure content is above the green glow */

@@ -60,9 +60,15 @@ footer {
   z-index: 1 !important;
 }
 
-/* Reduce padding between banner and features */
+/* Remove gap between banner and features */
+.banner__area {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 .features__area.section-pt-120 {
-  padding-top: 60px !important;
+  padding-top: 40px !important;
+  margin-top: 0 !important;
 }
 
 /* Ensure sections don't clip the glow */

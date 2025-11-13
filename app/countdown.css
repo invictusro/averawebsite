@@ -1,0 +1,21 @@
+/* Countdown Timer Styles */
+.coming-time {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.time-count {
+  text-align: center;
+  min-width: 80px;
+}
+
+.time-count span {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: var(--tg-theme-primary, #00d4ff);
+}

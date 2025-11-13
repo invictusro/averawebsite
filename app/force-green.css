@@ -1,0 +1,176 @@
+/* Force all yellow/gold light effects to emerald green with maximum specificity */
+
+/* Override blockquote yellow gradient */
+blockquote::before,
+.blockquote::before,
+blockquote:before {
+  background: linear-gradient(180deg, #10b981 0%, #064e3b 100%) !important;
+}
+
+/* Force all CSS variables to emerald green */
+:root,
+html,
+body {
+  --tg-color-yellow-light: #10b981 !important;
+  --tg-color-yellow-light-2: rgba(16, 185, 129, 0.1) !important;
+  --tg-common-color-yellow: #10b981 !important;
+  --tg-common-color-yellow-2: #059669 !important;
+  --tg-theme-primary: #10b981 !important;
+  --tg-primary-color: #10b981 !important;
+}
+
+/* Override any inline styles with yellow colors */
+[style*="#ffcc"],
+[style*="#ffbe"],
+[style*="#fffb"],
+[style*="#ffd"],
+[style*="#ffe"],
+[style*="rgb(255, 204"],
+[style*="rgb(255, 190"],
+[style*="rgb(255, 251"],
+[style*="rgba(255, 204"],
+[style*="rgba(255, 190"],
+[style*="rgba(255, 251"] {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.05) 100%) !important;
+  color: #10b981 !important;
+}
+
+/* Replace all box-shadow with yellow tones */
+* {
+  --shadow-color-yellow: rgba(16, 185, 129, 0.2) !important;
+  --glow-color: rgba(16, 185, 129, 0.15) !important;
+}
+
+/* Override specific sections that might have yellow glows */
+.section__title::before,
+.section__title::after,
+.section__title-two::before,
+.section__title-two::after,
+.title::before,
+.title::after,
+h2::before,
+h2::after,
+h3::before,
+h3::after,
+.features__item::before,
+.features__item-two::before,
+.crypto__item::before,
+.token__wrap::before,
+.token__wrap-inner::before,
+.work__item::before,
+.roadmap__item::before,
+.team__item::before,
+.banner__content::before,
+.banner__content::after {
+  background: radial-gradient(circle at center, rgba(16, 185, 129, 0.08) 0%, transparent 70%) !important;
+  filter: hue-rotate(0deg) brightness(1.2) !important;
+}
+
+/* Force emerald green on any element with yellow background */
+*[class*="yellow"],
+*[class*="gold"],
+*[id*="yellow"],
+*[id*="gold"] {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  color: white !important;
+}
+
+/* Replace any yellow text colors */
+.title span,
+.sub-title,
+h2 span,
+h3 span,
+h4 span,
+.highlight,
+.accent,
+mark {
+  color: #10b981 !important;
+  background: transparent !important;
+}
+
+/* Force emerald green on all gradients that contain yellow */
+.banner__bg::before,
+.banner__area::before,
+.features__area::before,
+.token__area::before,
+.crypto__area::before,
+.work__area::before,
+.roadmap__area::before,
+.team__area::before,
+.faq__area::before,
+.blog__area::before,
+section::before,
+.main-area::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: radial-gradient(
+    circle at 30% 50%,
+    rgba(16, 185, 129, 0.04) 0%,
+    transparent 50%
+  ),
+  radial-gradient(
+    circle at 70% 80%,
+    rgba(5, 150, 105, 0.03) 0%,
+    transparent 50%
+  ) !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+/* Ensure content is above the green glow */
+.container,
+.row,
+[class*="col-"] {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Replace yellow borders and outlines */
+*[style*="border"] {
+  border-color: rgba(16, 185, 129, 0.3) !important;
+}
+
+/* Force all animations to use emerald green */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.5);
+  }
+}
+
+/* Apply to any glowing elements */
+.glow,
+[class*="glow"],
+.pulse,
+[class*="pulse"] {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Override SVG and image filters that might have yellow tint */
+svg,
+img {
+  filter: contrast(1) brightness(1) saturate(1) hue-rotate(0deg) !important;
+}
+
+/* Force pseudo-elements to use emerald green */
+*::before,
+*::after {
+  border-color: rgba(16, 185, 129, 0.2) !important;
+}
+
+/* Replace all yellow shadows in the document */
+* {
+  text-shadow: none !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.title,
+.heading {
+  text-shadow: 0 0 30px rgba(16, 185, 129, 0.1) !important;
+}

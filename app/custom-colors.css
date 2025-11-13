@@ -1,0 +1,249 @@
+/* Custom Emerald Green Color Scheme */
+:root {
+  --tg-theme-primary: #10b981;
+  --tg-theme-primary-dark: #059669;
+  --tg-theme-primary-light: #34d399;
+  --tg-theme-primary-rgb: 16, 185, 129;
+  --tg-common-color-yellow: #10b981;
+  --tg-common-color-yellow-2: #059669;
+  --tg-color-yellow-light: #10b981;
+  --tg-color-yellow-light-2: rgba(16, 185, 129, 0.1);
+}
+
+/* Override any yellowish colors with emerald green */
+[style*="rgb(255, 204, 102)"],
+[style*="rgb(255, 190, 23)"],
+[style*="rgb(255, 251, 243)"],
+[style*="#ffcc66"],
+[style*="#ffbe17"],
+[style*="#fffbf3"] {
+  color: #10b981 !important;
+  background: rgba(16, 185, 129, 0.1) !important;
+}
+
+/* Override yellow/gold colors with emerald green */
+.tg-btn,
+.tg-btn-two,
+.header-btn a,
+button[type="submit"].tg-btn {
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%) !important;
+  border-color: #10b981 !important;
+}
+
+.tg-btn:hover,
+.tg-btn-two:hover {
+  background: linear-gradient(90deg, #059669 0%, #047857 100%) !important;
+}
+
+/* Text highlights */
+.title span,
+.sub-title,
+.marquee__item,
+.token__received span,
+.crypto__content h2 span,
+h2.title span,
+h3.title span,
+h4.title span {
+  color: #10b981 !important;
+}
+
+/* Progress bar */
+.progress-bar {
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%) !important;
+}
+
+/* Links and accents */
+a:hover {
+  color: #10b981 !important;
+}
+
+/* Countdown numbers */
+.time-count span {
+  color: #10b981 !important;
+}
+
+/* Icons and shapes with primary color */
+.features__icon,
+.crypto__icon,
+.roadmap__icon {
+  filter: hue-rotate(45deg) brightness(1.1);
+}
+
+/* Form focus states */
+input:focus,
+textarea:focus {
+  border-color: #10b981 !important;
+  outline-color: #10b981 !important;
+}
+
+/* Banner form button */
+.banner__form button {
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%) !important;
+}
+
+/* Navigation active states */
+.navigation li.active a,
+.navigation li a:hover {
+  color: #10b981 !important;
+}
+
+/* App download buttons */
+.app-download-btn {
+  background: #000;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #333;
+}
+
+.app-download-btn:hover {
+  background: #111;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+}
+
+.app-download-btn.android {
+  background: #10b981;
+  border-color: #059669;
+}
+
+.app-download-btn.android:hover {
+  background: #059669;
+}
+
+.download-badge {
+  height: 50px;
+  width: auto;
+}
+
+/* Override any yellow/gold light effects with emerald green */
+*[class*="glow"],
+*[class*="shadow"],
+.section__title::before,
+.section__title::after,
+.tg-btn::before,
+.tg-btn::after,
+.features__item::before,
+.crypto__item::before,
+.token__wrap::before,
+.roadmap__item::before {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.05) 100%) !important;
+  box-shadow: 0 0 40px rgba(16, 185, 129, 0.15) !important;
+}
+
+/* Update hover glows */
+.tg-btn:hover,
+.features__item:hover,
+.crypto__item:hover,
+.roadmap__item:hover,
+.team__item:hover {
+  box-shadow: 0 10px 40px rgba(16, 185, 129, 0.2) !important;
+}
+
+/* Section background glows */
+.features__area,
+.token__area,
+.crypto__area,
+.roadmap__area {
+  position: relative;
+}
+
+.features__area::before,
+.token__area::before,
+.crypto__area::before,
+.roadmap__area::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Replace yellow radial gradients with emerald green */
+body,
+section,
+.main-area {
+  background-image: radial-gradient(circle at 20% 50%, rgba(16, 185, 129, 0.03) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(5, 150, 105, 0.03) 0%, transparent 50%) !important;
+}
+
+/* Update border glows */
+.token__wrap,
+.features__item,
+.crypto__item,
+.roadmap__item,
+.work__item {
+  border-color: rgba(16, 185, 129, 0.2) !important;
+}
+
+/* Button glow effects */
+.tg-btn,
+.tg-btn-two {
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.2) !important;
+}
+
+.tg-btn:hover,
+.tg-btn-two:hover {
+  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.3) !important;
+}
+
+/* Override blockquote and decorative elements */
+blockquote::before,
+blockquote::after,
+blockquote {
+  background: linear-gradient(180deg, #10b981 0%, #064e3b 100%) !important;
+  border-left-color: #10b981 !important;
+}
+
+/* Override specific yellow/gold gradients with emerald green */
+.banner__bg,
+.banner__area,
+.features__area,
+.token__area,
+.crypto__area,
+.work__area,
+.roadmap__area,
+.team__area {
+  background-image: radial-gradient(circle at 30% 50%, rgba(16, 185, 129, 0.03) 0%, transparent 60%),
+                    radial-gradient(circle at 70% 80%, rgba(5, 150, 105, 0.02) 0%, transparent 60%) !important;
+}
+
+/* Specific section light effects */
+.features__item::after,
+.crypto__item::after,
+.token__wrap::after,
+.work__item::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(16, 185, 129, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.features__item:hover::after,
+.crypto__item:hover::after,
+.token__wrap:hover::after,
+.work__item:hover::after {
+  opacity: 1;
+}
+
+/* Update any remaining yellow shadows to emerald green */
+*[style*="box-shadow"],
+*[class*="shadow"] {
+  box-shadow: 0 10px 40px rgba(16, 185, 129, 0.15) !important;
+}

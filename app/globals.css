@@ -1,0 +1,107 @@
+@import url('/assets/css/bootstrap.min.css');
+@import url('/assets/css/animate.min.css');
+@import url('/assets/css/fontawesome-all.min.css');
+@import url('/assets/css/swiper-bundle.min.css');
+@import url('/assets/css/default-icons.css');
+@import url('/assets/css/default.css');
+@import url('/assets/css/aos.css');
+@import url('/assets/css/main.css');
+@import url('./countdown.css');
+@import url('./custom-colors.css');
+@import url('./mobile-responsive.css');
+@import url('./force-green.css');
+@import url('./marquee-billboard.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Preloader transition */
+#preloader {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Ensure images are visible */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix for sections that might be hidden */
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure elements with animation attributes are visible */
+[data-aos],
+[data-wow-delay] {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Fix token section visibility */
+.token__area,
+.token__wrap,
+.token__content {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Fix FAQ section visibility */
+.faq__area,
+.faq__img,
+.faq__content {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Fix work section visibility */
+.work__area,
+.work__item-wrap,
+.work__img {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Footer logo size and alignment */
+.footer__logo {
+  text-align: left !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.footer__content {
+  text-align: left !important;
+}
+
+.footer__logo img:first-of-type {
+  max-height: 80px !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+.footer__logo img:last-of-type {
+  max-height: 36px !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+.footer__logo a {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+/* Navbar logo size */
+.logo img:first-of-type,
+.nav-logo img:first-of-type {
+  max-height: 40px !important;
+}
+
+.logo img:last-of-type,
+.nav-logo img:last-of-type {
+  max-height: 22px !important;
+}

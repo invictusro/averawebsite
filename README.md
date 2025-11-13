@@ -21,7 +21,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3006](http://localhost:3006) to view it in the browser.
 
 ### Build
 
@@ -32,13 +32,13 @@ npm start
 
 ## Deployment
 
-The application runs on port 3000 by default.
+The application runs on port 3006 by default.
 
 ### Docker Deployment
 
 ```bash
 docker build -t avera-website .
-docker run -p 3000:3000 avera-website
+docker run -p 3006:3006 avera-website
 ```
 
 ### Coolify Deployment

@@ -15,7 +15,7 @@ export default function Header() {
                 <nav className="tgmenu__nav">
                   <div className="logo">
                     <Link href="/" style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
-                      <img src="/logo/avera-icon.png" alt="AVERA Icon" style={{height: '40px', width: 'auto'}} />
+                      <img src="/logo/avera-icon.png" alt="AVERA Icon" style={{height: '45px', width: 'auto'}} />
                       <img src="/logo/avera-text.png" alt="AVERA" style={{height: '22px', width: 'auto'}} />
                     </Link>
                   </div>
@@ -56,7 +56,7 @@ export default function Header() {
           <div className="close-btn"><i className="tg-flaticon-close-1"></i></div>
           <div className="nav-logo">
             <Link href="/" style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
-              <img src="/logo/avera-icon.png" alt="AVERA Icon" style={{height: '40px', width: 'auto'}} />
+              <img src="/logo/avera-icon.png" alt="AVERA Icon" style={{height: '45px', width: 'auto'}} />
               <img src="/logo/avera-text.png" alt="AVERA" style={{height: '22px', width: 'auto'}} />
             </Link>
           </div>

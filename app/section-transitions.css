@@ -62,12 +62,12 @@ footer {
 
 /* Add spacing between banner and features */
 .banner__area {
-  padding-bottom: 120px !important;
+  padding-bottom: 160px !important;
   margin-bottom: 0 !important;
 }
 
 .features__area.section-pt-120 {
-  padding-top: 180px !important;
+  padding-top: 220px !important;
   margin-top: 0 !important;
 }
 

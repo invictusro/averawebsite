@@ -71,6 +71,11 @@ footer {
   margin-top: 0 !important;
 }
 
+/* Reduce gap between section title and content */
+.section__title.mb-80 {
+  margin-bottom: 40px !important;
+}
+
 /* Ensure sections don't clip the glow */
 .banner__area,
 .features__area,

@@ -11,6 +11,12 @@ export default function Footer() {
           <div className="row justify-content-center">
             <div className="col-lg-8">
               <div className="footer__content">
+                <div className="footer__logo">
+                  <Link href="/" style={{display: 'inline-flex', alignItems: 'center', gap: '12px'}}>
+                    <img src="/logo/avera-icon.png" alt="AVERA Icon" style={{height: '80px', width: 'auto'}} />
+                    <img src="/logo/avera-text.png" alt="AVERA" style={{height: '36px', width: 'auto'}} />
+                  </Link>
+                </div>
                 <span className="sub-title">Built on web3. Powered by You</span>
                 <h2 className="title">Join with our <span>future</span> of AVERA currency</h2>
                 <div className="team__social-wrap">

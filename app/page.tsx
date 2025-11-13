@@ -75,7 +75,7 @@ export default function Home() {
               <div className="col-lg-6">
                 <div className="section__title text-center mb-80">
                   <span className="sub-title">accessible for everyone</span>
-                  <h2 className="title">Crypto <span>development</span> accessible</h2>
+                  <h2 className="title">Crypto <span>mining</span> accessible</h2>
                 </div>
               </div>
             </div>

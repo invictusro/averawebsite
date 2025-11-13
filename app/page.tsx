@@ -68,25 +68,6 @@ export default function Home() {
           </div>
         </BackgroundImage>
 
-        {/* Brand Area */}
-        <div className="brand__area">
-          <div className="container">
-            <div className="brand__item-wrap">
-              <div className="swiper-container fix brand-active">
-                <div className="swiper-wrapper">
-                  {[1, 2, 3, 4, 5, 6, 4].map((num, index) => (
-                    <div key={index} className="swiper-slide">
-                      <div className="brand__item">
-                        <img src={`/assets/img/brand/brand_0${num}.svg`} alt="logo" />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Features Area */}
         <section id="features" className="features__area section-pt-120">
           <div className="container">

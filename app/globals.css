@@ -65,6 +65,18 @@ section {
   visibility: visible !important;
 }
 
+/* Footer link styling */
+.copyright-text a {
+  color: #3b82f6 !important;
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
+
+.copyright-text a:hover {
+  color: #2563eb !important;
+  text-decoration: underline !important;
+}
+
 /* Footer logo size and alignment */
 .footer__logo {
   text-align: left !important;
